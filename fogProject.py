@@ -4,7 +4,7 @@ Dr. Jaimie Kelley
 7 May 2020
 Fog Computing Project
 --------------------------------------------------------------------------------------------------------------
-API Instructions: https://dev.fitbit.com/apps/oauthinteractivetutorial?clientEncodedId=22BQJZ&clientSecret=83768170a5787fd8d7a76c4ae169d28e&redirectUri=http://localhost/&applicationType=PERSONAL
+API Instructions: https://dev.fitbit.com/apps/oauthinteractivetutorial?clientEncodedId=REDACTED&clientSecret=REDACTED&redirectUri=http://localhost/&applicationType=PERSONAL
 
 UserId: 5XTF7P
 
@@ -12,9 +12,7 @@ Refresh Token:
 
 
 Make a request:
-curl -i -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkJRSloiLCJzdWIiOiI1WFRGN1AiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJ
-hY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJzZXQgcmFjdCBybG9jIHJ3ZWkgcmhyIHJwcm8gcm51dCByc2xlIiwiZXhwIjox
-NTg5MzI4OTYwLCJpYXQiOjE1ODg3MjQxNjB9.kt2x68AKvH3uKxUJFh5Yo_OpYgu9NXN0Z4lDqjQQ4MQ" https://api.fitbit.com/1/user/-/profile.json
+curl -i -H "Authorization: Bearer REDACTED" https://api.fitbit.com/1/user/-/profile.json
 --------------------------------------------------------------------------------------------------------------
 '''
 
@@ -30,7 +28,7 @@ rdb.flushdb()
 import requests
 
 headers = {
-    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkJRSloiLCJzdWIiOiI1WFRGN1AiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJzZXQgcmFjdCBybG9jIHJ3ZWkgcmhyIHJwcm8gcm51dCByc2xlIiwiZXhwIjoxNTg5MzI4OTYwLCJpYXQiOjE1ODg3MjQxNjB9.kt2x68AKvH3uKxUJFh5Yo_OpYgu9NXN0Z4lDqjQQ4MQ',
+    'Authorization': 'Bearer REDACTED',
 }
 response = requests.get('https://api.fitbit.com/1/user/-/profile.json', headers=headers)
 print("API Query: ")
